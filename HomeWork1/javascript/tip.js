@@ -5,7 +5,7 @@ window.onload = function () {
     const calculateTip = document.getElementById("btn");
 
     calculateTip.onclick = function () {
-        const totalAmount = subTotal.value - (subTotal.value * (tip.value / 100));
+        const totalAmount = subTotal.value + (subTotal.value * (tip.value / 100));
         totalRemaining.innerHTML = "$" + totalAmount;
     }
 
