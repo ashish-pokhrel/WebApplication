@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  background-image: url("../imagesMovieReview/background.png");
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 8pt;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24pt;
+  font-weight: bold;
+  text-shadow: 3px 3px #999999;
+}
+
+.backImage {
+  height: 50px;
+  background-image: url("../imagesMovieReview/bannerbg.png");
+  background-repeat: repeat-x;
+}
+
+.backImage img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 35% 35% 30%;
+  border: gray 4px;
+  border-style: solid;
+  border-radius: 20px;
+  margin: 21%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.header1>div:nth-child(odd) {
+  /* background-color: aqua; */
+}
+
+.header1 {
+  grid-column: 1/3;
+}
+
+.footer {
+  grid-column: 1/4;
+}
+
+
+.nested {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-auto-columns: minmax(50%, auto);
+  grid-auto-rows: minmax(50%, auto);
+  padding: 2px;
+  margin: 2px;
+  gap: 1px;
+
+}
+
+
+.nestedChild {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 2px;
+  margin: 2px;
+  gap: 1px;
+
+}
+
+.nested>div>p {
+  border: gray 2px;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 2px;
+  background-color: #E8DC9B;
+}
+
+
+.backImage2 {
+  background-image: url("../imagesMovieReview/rbg.png");
+  background-repeat: repeat-x;
+  border-top-left-radius: 16px;
+}
+
+.backImage2 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headerImg {
+  float: left;
+  border-top-left-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.headerText {
+  color: red;
+  font-size: 65px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+dl {
+  padding: 4px;
+}
+
+dl dt {
+  font-weight: bold;
+}
+
+dl dd {
+  font-weight: 510;
+}
+
+.sideNav {
+  background-color: #A2B964;
+  border-top-right-radius: 16px;
+
+}
+
+.sideImg {
+
+  border-top-right-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+.footerBg {
+  background-color: #A2B964;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 4px;
+  text-align: center;
+}
+
+.blockSpan {
+  display: block;
+}
+
+.nestedChild {
+  float: left;
+  padding-left: 0%;
+  margin-left: 0%;
+}
+
+span>span {
+  margin-top: 0%;
+}
+
+.childSpan {
+  margin-left: 49px;
+}
+
+.footerCopyrights {
+  float: right;
+}
+
+.italic {
+  font-style: italic;
+}
+
+dt{
+  padding: 1px;
+  margin-top: 2px;
+}

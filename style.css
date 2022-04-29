@@ -1,0 +1,96 @@
+.title {
+    background-color: aqua;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    color: #ffffff;
+}
+
+.headerNav {
+    background-color: #245755;
+    height: 25%;
+    padding-left: 10px;
+}
+
+footer {
+    background-color: #245755;
+    height: 25%;
+    border-style: solid;
+    width: 100%;
+    bottom: 0;
+    padding-left: 10px;
+}
+
+div {
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: justify;
+    border-style: solid;
+
+}
+
+p {
+    color: rgb(11, 57, 57);
+}
+
+a:link {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.divMenu {
+    border: 5px outset #245755;
+    float: right;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container>div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.selectedColor {
+    background-color: #245755;
+    color: white;
+}
+
+a:active {
+    background-color: #245755;
+}
+
+ul,ol,
+p {
+    color: #245755;
+    text-align: left;
+}
+
+h3 {
+    color: #551a8b;
+    text-align: left;
+}
+span{
+    font-size: small;
+}
+P::first-letter{
+    color: #ff0000;
+    font-size: 200%;
+}

@@ -1,0 +1,94 @@
+body {
+    margin-top: 10%;
+    margin-left: 30%;
+    max-width: 500px;
+}
+
+input[type="number"] {
+    margin: 1px;
+    width: 68px;
+}
+
+.forms {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 2px;
+
+}
+
+label {
+    padding: 10px;
+}
+
+button {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+    border: pink 2px;
+    box-shadow: 3px 3px;
+    background-color: rgb(248, 160, 175);
+}
+
+select {
+    padding: 2px;
+    width: 50%;
+}
+
+fieldset {
+    border: 2px rgb(192, 192, 192);
+    border-style: solid;
+    padding: 10px;
+    background-color: #cfd1f6;
+    border-radius: 5px;
+    box-shadow: 2px 2px grey;
+}
+
+label {
+    color: black;
+    font-weight: bold;
+    font-size: small;
+}
+
+small {
+    color: red;
+    font-size: x-small;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+button{
+    margin-left: 11px;
+    border: 1px rgb(165, 121, 70);
+    border-style: solid;
+    box-shadow: 1px 1px grey;
+}
+button:hover {
+    background-color: pink;
+    cursor: pointer;
+    
+}
+.divFrame{
+    border: 1px rgb(192, 192, 192);
+    border-style: solid;
+    width: 105px;
+    height:20px;
+    padding: 2px;
+    font-size: small;
+    box-shadow: 1px 1px grey;
+    position: relative;
+    background-color: white;
+    margin-top: -22px;
+    margin-left: 12px;
+}
+
+legend{
+    border: 1px rgb(192, 192, 192);
+    border-style: solid;
+    padding: 5px;
+    background-color: white;
+    
+    box-shadow: 2px 2px grey;
+}

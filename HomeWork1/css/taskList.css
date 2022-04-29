@@ -1,0 +1,37 @@
+body {
+    color: blue;
+}
+
+.container {
+    border: 5px blue solid;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 10px;
+}
+
+.container>div {
+    padding: 10px;
+    margin: 10%;
+}
+
+input[type=text] {
+    width: 100%;
+    margin: 10px;
+}
+
+label {
+    margin: 10px;
+    width: 100%;
+    color: black;
+}
+
+button {
+    margin: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+textarea {
+    margin: 10px;
+    width: 50%;
+}
