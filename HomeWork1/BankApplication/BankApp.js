@@ -27,6 +27,13 @@ window.onload = function () {
     create.onclick = function () {
         const name = accountName.value;
         const depositAmount = deposit.value;
+
+        if (name == null || depositAmount == null || name == "" || depositAmount =="")
+        {
+            alert("Please insert value");
+            return null;
+        }
+
         bankAccount.createBankAccount(name, depositAmount);
         loadListData();
     }

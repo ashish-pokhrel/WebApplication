@@ -10,10 +10,12 @@ body {
     margin: 2px;
 }
 
-input[type='text'] {
+input[type='text'],button {
     margin: 2px;
+    padding: 3px;
+    cursor: pointer;
 }
 
-textarea{
-    margin-left: 20px;
+textarea {
+    margin-top: 20px;
 }
