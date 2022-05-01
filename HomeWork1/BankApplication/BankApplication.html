@@ -11,28 +11,62 @@
 </head>
 
 <body>
-    <div class="form">
-        <div>
-            <label for="AccountName">Account Name:</label>
+    <div id="create-account">
+        <div class="form">
+            <div>
+                <label for="AccountName">Account Name:</label>
+            </div>
+            <div>
+                <input type="text" name="AccountName" id="accountName">
+            </div>
+            <div>
+                <label for="Deposit">Deposit:</label>
+            </div>
+            <div>
+                <input type="text" name="Deposit" id="deposit-Id">
+            </div>
+            <div>
+                <button id="create-Id">Create New Account</button>
+            </div>
+            <div></div>
+            <div>
+                <textarea rows="8" cols="100" id="listData-Id"></textarea>
+            </div>
         </div>
-        <div>
-            <input type="text" name="AccountName" id="accountName">
+    </div>
+    <div id="deposit-debit">
+        <button id="deposit-button">Deposit</button>
+        <button id="debit-button">Debit</button>
+    </div>
+    <div class="deposit-account">
+        <div class="form">
+            <div>
+                <label>Select Account:</label>
+            </div>
+            <div>
+                <select id="accountId">
+                    <option value=""> --select--
+                    </option>
+                </select>
+            </div>
+            <div class="depositField">
+                <label>Deposit</label>
+            </div>
+            <div class="depositField">
+                <input type="text" id="depositTextId">
+            </div>
+            <div class="debitField">
+                <label>Debit</label>
+            </div>
+            <div class="debitField">
+                <input type="text" id="debitTextId">
+            </div>
+            <div>
+                <button class="depositField" id="submit-Deposit">Submit Deposit</button>
+                <button class="debitField" id="submit-Debit">Submit Debit</button>
+            </div>
         </div>
-        <div>
-            <label for="Deposit">Deposit:</label>
-        </div>
-        <div>
-            <input type="text" name="Deposit" id="deposit-Id">
-        </div>
-        <div>
-            <button id="create-Id">Create New Account</button>
-        </div>
-        <div></div>
-        <div>
-            <textarea rows="8" cols="100" id="listData-Id"></textarea>
-        </div>
-        </dv>
-
+    </div>
 </body>
 
 </html>
