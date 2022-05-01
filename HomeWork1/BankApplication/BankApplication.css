@@ -1,0 +1,19 @@
+body {
+    margin: 20%;
+    margin-top: 0%;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    padding: 50px;
+    margin: 2px;
+}
+
+input[type='text'] {
+    margin: 2px;
+}
+
+textarea{
+    margin-left: 20px;
+}
