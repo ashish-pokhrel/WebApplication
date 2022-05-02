@@ -41,8 +41,8 @@ window.onload = function () {
             this.#deposit = parseFloat(this.#deposit) + parseFloat(deposit);
         }
 
-        setdebit(accountName, debit) {
-            this.#deposit = parseFloat(this.#deposit) - parseFloat(deposit);
+        setdebit(debit) {
+            this.#deposit = parseFloat(this.#deposit) - parseFloat(debit);
         }
 
     }
@@ -70,10 +70,8 @@ window.onload = function () {
 
 
     function setAccountNameDropdown() {
-        for (const x of bankAccount.accountInfoList) {
-            accountId1.append(new Option(x.getAccountName(), x.getAccountName()));
-        }
-
+        let x = bankAccount.accountInfoList[bankAccount.accountInfoList.length - 1];
+        accountId1.append(new Option(x.getAccountName(), x.getAccountName()));
     }
 
     function initialLoadShowHide(option, fieldEvent) {
