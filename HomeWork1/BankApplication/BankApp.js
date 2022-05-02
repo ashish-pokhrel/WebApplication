@@ -28,6 +28,7 @@ window.onload = function () {
         createBankAccount(accountName, deposit) {
             let newData = new BankAccount(accountName, deposit);
             this.accountInfoList.push(newData);
+            localStorage.setItem("accountInfoListInStorage", newData);
         }
         getAccountName() {
             return this.#accountName;
@@ -56,7 +57,12 @@ window.onload = function () {
             return null;
         }
 
-        bankAccount.createBankAccount(name, depositAmount);
+        let findIndexByBankName = bankAccount.accountInfoList.findIndex((x) => x.getAccountName() == name);
+        if (findIndexByBankName >= 0)
+            bankAccount.accountInfoList[findIndexByBankName].setdeposit(depositAmount);
+        else
+            bankAccount.createBankAccount(name, depositAmount);
+
         buttonShowHide('block');
     }
 
@@ -68,10 +74,17 @@ window.onload = function () {
         listData.value = finalListData;
     }
 
+    function removeAll(selectBox) {
+        while (selectBox.options.length > 0) {
+            selectBox.remove(0);
+        }
+    }
 
     function setAccountNameDropdown() {
-        let x = bankAccount.accountInfoList[bankAccount.accountInfoList.length - 1];
-        accountId1.append(new Option(x.getAccountName(), x.getAccountName()));
+        removeAll(accountId1);
+        for (const x of bankAccount.accountInfoList) {
+            accountId1.append(new Option(x.getAccountName(), x.getAccountName()));
+        }
     }
 
     function initialLoadShowHide(option, fieldEvent) {
@@ -148,5 +161,12 @@ window.onload = function () {
         loadListData();
     }
 
-
+    function onPageLoad() {
+        let localStorageData = localStorage.getItem("accountInfoListInStorage");
+        if (localStorageData != '[object Object]') {
+            bankAccount.accountInfoList = localStorageData;
+            loadListData();
+        }
+    }
+    //onPageLoad();
 }
