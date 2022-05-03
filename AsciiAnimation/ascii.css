@@ -11,20 +11,26 @@ h2:first {
     text-align: center;
 }
 
-.mainDiv{
+.mainDiv {
     text-align: center;
 }
-textarea{
+
+textarea {
     width: 90%;
     height: 400px;
     font-weight: 12pt;
     font-family: monospace;
 }
 
-fieldset{
+fieldset {
     border: 5px black solid;
 }
 
-table{
-   margin-left: 20%;
+table {
+    margin-left: 20%;
+}
+
+button,
+input[type="checkbox"] {
+    cursor: pointer;
 }

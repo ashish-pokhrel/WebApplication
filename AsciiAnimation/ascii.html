@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASCII Animation</title>
+    <script rel="stylesheet" src="./jquery-3.6.0.min.js"></script>
     <script rel="stylesheet" src="./animations.js"></script>
     <link rel="stylesheet" type="text/css" href="./ascii.css">
     <script rel="stylesheet" src="./ascii.js"></script>
-
 </head>
 
 <body>
@@ -17,7 +17,7 @@
         <h2>
             CS472: ASCII Animation Viewer
         </h2>
-        <textarea cols="80" rows="20"></textarea>
+        <textarea cols="80" rows="20" id="mytextarea"></textarea>
         <div>
             <table>
                 <thead>
@@ -38,7 +38,7 @@
                     </td>
                     <td>
                         <fieldset>
-                            <legend>Animation:</legend>
+                            <legend>Size:</legend>
                             <select id="size" for="size">
                                 <option value="medium">Medium</option>
                             </select>
@@ -47,16 +47,12 @@
                     <td>
                         <fieldset>
                             <legend>Speed:</legend>
-                            <input type="checkbox" id="turbo" value="turbo">
+                            <input type="checkbox" id="speed" value="turbo">
                             <label for="turbo">Turbo</label>
                         </fieldset>
                     </td>
                 </thead>
             </table>
-
-
-
-
         </div>
     </div>
 </body>
