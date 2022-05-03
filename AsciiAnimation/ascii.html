@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Animation</title>
+    <script rel="stylesheet" src="./animations.js"></script>
+    <link rel="stylesheet" type="text/css" href="./ascii.css">
+    <script rel="stylesheet" src="./ascii.js"></script>
+
+</head>
+
+<body>
+    <div class="mainDiv">
+        <h2>
+            CS472: ASCII Animation Viewer
+        </h2>
+        <textarea cols="80" rows="20"></textarea>
+        <div>
+            <table>
+                <thead>
+                    <td>
+                        <fieldset>
+                            <legend>Play Controls:</legend>
+                            <button id="start">Start</button>
+                            <button id="stop">Stop</button>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <legend>Animation:</legend>
+                            <select id="animation" for="animation">
+                                <option value="blank">Blank</option>
+                            </select>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <legend>Animation:</legend>
+                            <select id="size" for="size">
+                                <option value="medium">Medium</option>
+                            </select>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <legend>Speed:</legend>
+                            <input type="checkbox" id="turbo" value="turbo">
+                            <label for="turbo">Turbo</label>
+                        </fieldset>
+                    </td>
+                </thead>
+            </table>
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
