@@ -9,7 +9,7 @@ function getPicture() {
         type: "GET",
         data: {
             api_key: "tbpusrwsiGIYHf1XnwRIjWNsbnMYKLfSw3F1cFRG",
-            date: $("date").val()
+            date: $("#date").val()
         },
         dataType: "json",
         "success": loadData,
